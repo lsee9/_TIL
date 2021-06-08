@@ -75,6 +75,22 @@
 - 10을담았다가 200으로 바꿔줌 그러면 300이 실행됨
 - cntl + F11누르면 자동 실행
 
+```java
+package basicSyntax;
+
+public class MainClass {
+	public static void main(String[] args) {
+		int i = 10;
+		int j;
+		j = 100;
+		i = 200;
+		System.out.println("i + j = " + (i + j));
+	}
+}
+```
+
+
+
 ## 2.3 메모리 할당과 진법
 
 - 변수 선언시에 자료형을 선언함
