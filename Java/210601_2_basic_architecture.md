@@ -1,14 +1,12 @@
 ###### 210601_tue
 
-##### 필기만 한거! 정리중!!
-
 <hr>
 
 ###### 오늘의 목차 :lemon:
 
 #### Basic Syntax
 
-- Java 프로그램의 실행 구조 :heavy_check_mark:
+- **Java 프로그램의 실행 구조** :heavy_check_mark:
 - 변수
 - 기본 자료형
 - 특수 문자와 서식 문자

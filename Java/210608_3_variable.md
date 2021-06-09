@@ -10,7 +10,7 @@
 #### Basic Syntax
 
 - Java 프로그램의 실행 구조 
-- 변수 :heavy_check_mark:
+- **변수** :heavy_check_mark:
 - 기본 자료형
 - 특수 문자와 서식 문자
 - 연산자
