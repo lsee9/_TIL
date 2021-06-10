@@ -72,6 +72,8 @@
 
 ## 3.2 Java 기본자료형
 
+<img src="210609_4_data_type.assets/image-20210610161433542.png" alt="image-20210610161433542" style="zoom:33%;" />
+
 #### 정수형
 
 - **byte** (바이트)
@@ -80,132 +82,120 @@
   - 잘 사용 X
     - 표현할 수 있는 숫자가 너무 적음
     - 128부터는 누실됨 (overflow 발생)
-- **char** (문자)
-  - 
+  
+- **char** (문자) :cherries:
+  
+  > 아스키 코드로 변환되어 0, 1만으로 컴퓨터에서 표현되기 때문에 정수형으로 분류했습니다!
+  
+  - 2 byte = 16bit
+  - 단일문자 하나 ('A', 'b'...)
+  
+- **short**
 
-- 기본 자료
+  - 2 byte = 16bit
+  - byte보다는 크지만, 큰 숫자 표현 X 하기 때문에 잘 사용되지 않음
 
-  - 정수
+- **int** :cherries: :cherries:
 
-    - 바이트 : 메모리에서 1바이트 차지 = 8bit
+  - 4 byte = 32bit
+  - 실생활에 필요한 모든 숫자 표현 가능 (많이 쓰임)
 
-      -128 ~ +127, 256개의 정수만 받을 수 있음
+- **long**
 
-      표현할 수 있는 숫자가 너무 적음(잘 사용하지 않음)
+  - 8 byte = 64bit
+  - 실생활에 쓰지 않는 큰 수까지 표현
 
-      128부터는 누실됨 => overflow 발생
+<br>
 
-    - char 16bit
+#### 실수형
 
-      A, a이런 단일 문자 하나하나
+> 3.14, 1.78 이런식으로실수형으로 표현되는 것
 
-      엄청 많이 쓰진 않음
+- **float**
+  - 4 byte = 32bit
+- **double** :cherries:
+  - 8 byte = 64bit
+  - 프로그래밍하면서 필요한 모든 소수 표현 가능 (더 많이 씀)
 
-    - short
+<br>
 
-      byte보다는 큼, 그러나 큰 숫자 표현 X, 잘 쓰지는 않음
+#### 논리형
 
-    ##### A, a이런것도 아스키 코드로 변환해서 컴퓨터에서 표현됨 (0, 1로만 표현되기때문), 그래서 char도 정수형으로 분류함
+- **boolean** :cherries:
 
-    
+  - 1 byte = 8bit
 
-    - int
+  - true / false
 
-      32bit
+    > 참고!
+    >
+    > C 계열은 0 = false / 0이 아닌수 = true
+    >
+    > C++, Java : true, false 존재
 
-      실생활에서 필요한 숫자는 ㄴ32bit에서 전부 표현가능
+<br>
 
-      많이 씀
+#### 문자열??
 
-    - long
+> **객체 자료형**입니다!!!!
 
-      64bit
+- 4 byte
 
-      실생활에서 쓰지않는 큰 숫자까지 취급됨
+- **String** 자료형 사용
 
-    ##### 파란색으로 표시한게 많이 쓰임
+  - String인 ABCD 저장
+  - str은 따로 만들어 ABCD가 가진 객체의 주소를 저장함
 
-    그중 int가 가장 많이 씀ㄴ
+  ```java
+  String str = "ABCD"
+  ```
 
-    
+<br>
 
-  - 실수 : 3.14, 1.78이런식으로 실수형으로 표현되는 것
+<br>
 
-    - float
-    - double
-
-    ##### double가 더 많이 쓰임!
-
-    프로그래밍하면서 필요한 모든 소수점 표현 가능
-
-  - 논리
-
-    - boolean : 참 / 거짓
-
-      C계열 : 0을 false, 0이 아닌수 true
-
-      C++ : true, false
-
-      Java도 true, false가 존재함
-
-      1바이트
-
-  - 문자열???
-
-    - **String** 이라는 자료형 사용
-
-    - String str = "ABCD"
-
-      기본 자료형 X, **객체 자료형**!!!
-
-      4byte크기가짐!!!
-
-      다른 곳에 String값을 만들어놓고, str은 따로 만들어서 ABCD가 가진 객체의 주소를 str에 저장해둠
-
-#### 실행하기
+### 직접 사용해보자
 
 - Java 프로젝트 생성
+- class 생성
+  - 시작 첫 단어는 대문자
+  - main 적어주기
 
-- class : 시작 첫단어는 대문자
-- 작성함
-- 메모리 할당되고 데이터가 저장된다, 이걸 불러서 출력할 수 있음
-- 문자열도 그냥 바꾸면 바뀐 값이 출력
-- 변수에 담은 데이터는 언제나 변경 가능
+- 자료형 사용하기
 
-```java
-package dataFormat;
+  - 메모리 할당되고 데이터 저장된다
+  - 변수 사용해 값 출력
 
-public class MainClass {
-	public static void main(String[] args) {
-		char c = 'a';
-		System.out.println("c = " + c);
-		
-		int i  = 10;
-		System.out.println("i = " + i);
-		
-		double d = 10.123;
-		System.out.println("d = "+ d);
-		
-		boolean b = false;
-		System.out.println("b = " + b);
-		
-		String s = "Hello Java World";
-		System.out.println("s = " + s);
-		//원래 객체 생성할때는 new로 객체를 선언해주고 시작해야하는데
-		//워낙 많이 쓰여서 선언해주고 대입연산자로 값을 넣을 수 있도록 만들어줌
-//		String str = new String();
-		
-	}
-}
+  ```java
+  package dataFormat;
+  
+  public class MainClass {
+  	public static void main(String[] args) {
+  		char c = 'a';
+  		System.out.println("c = " + c);  //c = a
+  		
+  		int i  = 10;
+  		System.out.println("i = " + i);  //i = 10
+  		
+  		double d = 10.123;
+  		System.out.println("d = "+ d);  //d = 10.123
+  		
+  		boolean b = false;
+  		System.out.println("b = " + b);  //b = false
+  		
+  		String s = "Hello Java World";
+  		System.out.println("s = " + s);  //s = Hello Java World
+  		//원래 객체 생성할때는 new로 객체를 선언해주고 시작해야하는데
+  		//워낙 많이 쓰여서 선언해주고 대입연산자로 값을 넣을 수 있도록 만들어줌
+  		//String str = new String();
+  		
+  	}
+  }
+  ```
 
-c = a
-i = 10
-d = 10.123
-b = false
-s = Hello Java World
-```
+<br>
 
-
+<br>
 
 ## 3.3 형 변환
 
