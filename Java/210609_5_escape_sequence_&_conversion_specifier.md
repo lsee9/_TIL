@@ -84,6 +84,7 @@ System.out.printf("오늘의 강수량 %d%%!", 70);
 ```
 
 ```java
+System.out.printf("안녕 %c반 %s\n", 'A', "Mina");  //안녕 A반 Mina
 ```
 
 <br>
@@ -104,13 +105,16 @@ System.out.printf("오늘의 강수량 %d%%!", 70);
 - **왼쪽 정렬** : 일반적
 
   ```java
+  System.out.printf("%d\n", 12);   //12
+  System.out.printf("%d\n", 123);  //123
   ```
 
 - **오른쪽 정렬** : %[생성할 자릿수]\[서식문자]
 
   ```java
-  // 다섯칸 공간 만들고 오른쪽 정렬
-  
+  // 세칸 공간 만들고 오른쪽 정렬
+  System.out.printf("%3d\n", 12);   // 12
+  System.out.printf("%3d\n", 123);  //123
   ```
 
 #### 소수점 제한
@@ -121,11 +125,11 @@ System.out.printf("오늘의 강수량 %d%%!", 70);
 
   ```java
   //0으로 소수점 표현됨
-  
+  System.out.printf("%f\n", 1.23);  //1.230000
   //소수점 나타내지 않음
-  
+  System.out.printf("%.0f\n", 1.23);  //1
   //소수점 한자리까지 나타냄
-  
+  System.out.printf("%.1f\n", 1.23);  //1.2
   ```
 
 ###### 빈번히 쓰이지는 않지만 가끔 쓰이긴 함!! 알아는 두자
