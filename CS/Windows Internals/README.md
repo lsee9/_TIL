@@ -13,11 +13,11 @@
 
 ### Introduction
 
+###### Russinovich, M. (2012). In *Windows Internals* (6th ed.). introduction, Microsoft Pr. 
+
 - Microsoft Windows 7과 Windows Server 2008 R2를 이해하고자 하는 **개발자**와 **시스템 관리자**를 위한 책
 
   > Windows Internals, Sixth Edition is intended for **advanced computer professionals** (both developers and system administrators) who want to understand how the **core components of the Microsoft Windows 7** and **Windows Server 2008 R2 operating systems work** internally.
-  >
-  > Russinovich, M. (2012). In *Windows Internals* (6th ed.). introduction, Microsoft Pr. 
 
 - **개발자**에게 어떤 도움??
 
@@ -27,8 +27,6 @@
   > With this knowledge, developers can **better comprehend** the **rationale behind design choices** when **building applications** specific to the **Windows platform**.
   >
   > Such knowledge can also help developers **debug complex problems**.
-  >
-  > Russinovich, M. (2012). In *Windows Internals* (6th ed.). introduction, Microsoft Pr. 
 
 - **시스템 관리자**에게 어떤 도움??
 
@@ -38,6 +36,4 @@
   > System administrators can benefit from  this information as well, because understanding how the **operating system works "under the covers"** facilitates **understanding the performance behavior of the system** 
   >
   > and **makes troubleshooting** system problems much easier when things go wrong.
-  >
-  > Russinovich, M. (2012). In *Windows Internals* (6th ed.). introduction, Microsoft Pr. 
 
