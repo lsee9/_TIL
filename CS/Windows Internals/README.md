@@ -13,8 +13,6 @@
 
 ### Introduction
 
-###### 책 저자
-
 - Microsoft Windows 7과 Windows Server 2008 R2를 이해하고자 하는 **개발자**와 **시스템 관리자**를 위한 책
 
   > Windows Internals, Sixth Edition is intended for **advanced computer professionals** (both developers and system administrators) who want to understand how the **core components of the Microsoft Windows 7** and **Windows Server 2008 R2 operating systems work** internally.
