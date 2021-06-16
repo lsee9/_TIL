@@ -42,3 +42,9 @@
 
 - KAIST CS320 *Programming Languages* Course Reading Materials [링크](https://hjaem.info/articles/main)
 
+#### Spark
+
+- \[Spark\] Apache Spark란? [링크](https://mangkyu.tistory.com/128)
+- Apache Spark [링크](https://johnie.site/back-end/apache-spark/)
+- wikipedia - Apache Spark [링크](https://en.wikipedia.org/wiki/Apache_Spark)
+
