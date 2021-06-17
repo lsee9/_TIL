@@ -31,12 +31,11 @@
 <br>
 
 <hr>
-
 ### 학습에 참고할 사이트 :page_with_curl:
 
-#### Scala
-
 - 빅데이터 - 스칼라(scala), 스파크(spark)로 시작하기 [링크](https://wikidocs.net/book/2350)
+
+#### Scala
 
 - LEARN SCALA PROGRAMMING [링크](https://www.tutorialspoint.com/scala/scala_environment_setup.htm)
 
