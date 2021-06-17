@@ -13,7 +13,7 @@
 ###### 잘 정리하면서 하고싶은데 어렵다!!!
 
 <hr>
-
+<br>
 
 
 # 2. Basic Syntax
@@ -24,7 +24,7 @@
 
 - 서로의 메서드를 호출하여 소통하는 **객체의 모음(a collection of objects** (으로 정의될 수 있다!!)
 
-### 용어 정리
+### 용어 정리 :hatching_chick:
 
 - **Object**
   - `상태(state)`와 `행위(behaviors)`를 가진다
@@ -45,6 +45,47 @@
   - 지원된 메서드의 signature를 지정하여 객체 타입을 정의하는데 사용된다
 
 ###### 이것들에 대해서는 앞으로 차차 알아보도록 하자
+
+<br>
+
+### Scala 실행
+
+- **Interactive Mode**
+
+  - 대화형 모드, 입력 결과를 바로 보여준다
+  - cmd창에서 scala 입력 후 원하는 식 작성하기
+
+  ```shell
+  \User\local>scala
+  Welcome to Scala 2.13.6 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_291).
+  Type in expressions for evaluation. Or try :help.
+  
+  scala> println("Hello, World")
+  Hello, World
+  ```
+
+- **Script Mode**
+
+  - 스크립트 모드, 코드를 스크립트에 작성한 뒤 컴파일
+
+  - text에 코드를 작성한 뒤, `.scala`로 저장
+
+    ```scala
+    //HelloWorld.scala
+    object HelloWorld {
+    
+       def main(args: Array[String]) {
+          println("Hello, world!") // prints Hello World
+       }
+    }
+    ```
+
+  - cmd에서 scalac로 컴파일한 뒤, 실행한다
+
+    ```shell
+    \> scalac HelloWorld.scala
+    \> scala HelloWorld
+    ```
 
 <br>
 
