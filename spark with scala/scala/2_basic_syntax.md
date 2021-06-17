@@ -8,7 +8,8 @@
 
 #### Basic Syntax
 
-- 뭐를 어떻게 정리하는게 보기 좋을까ㅏ
+- Hello world
+- Basic Syntax
 
 ###### 잘 정리하면서 하고싶은데 어렵다!!!
 
@@ -89,5 +90,17 @@
 
 <br>
 
-## 2.1 
+## 2.1 Hello world
+
+
+
+
+
+<br>
+
+## 2.2 Basic Syntax
+
+
+
+
 
