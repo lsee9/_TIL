@@ -75,3 +75,96 @@
 
 ## 1.3 Installation
 
+> scala를 사용하려면 Java가 기본적으로 필요합니다!!!
+
+##### 호환을 위해 JDK 8 (Java SE 8)과 Scala 2.13.6
+
+### JDK 설치
+
+- 터미널(cmd)에 `java -version`으로 버전 확인
+
+  ```shell
+  >java -version
+  'java'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는 배치 파일이 아닙니다.
+  ```
+
+  ###### 이런 문구가 나오면 설치하면 된다@
+
+  ###### 이미 있는데 버전이 맞지 않다면 제어판에서 java 삭제후 재설치하자
+
+- 운영체제에 맞게 JDK를 설치한다 [링크](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+
+  - Windows x64 설치 (window+ R : control system에서 확인)
+  - 설치는 next만 누르면 OK
+
+- **환경변수** 설정
+
+  - window+ R : `control system`
+  - [고급 시스템 설정] - [고급] - [환경 변수]
+  - 시스템 변수 - [새로 만들기]
+    - 이름 : `JAVA_HOME` 
+    - 값 : `C:\Program Files\Java\jdk1.8.0_291`
+  - 시스템 변수 - [Path] - [편집]
+    - `%JAVA_HOME%\bin` 추가
+  - 확인 눌러서 변경 내용 적용하기
+
+- 터미널(cmd)에 `java -version`으로 버전 확인
+
+  ```shell
+  C:\Users\local>java -version
+  java version "1.8.0_291"
+  Java(TM) SE Runtime Environment (build 1.8.0_291-b10)
+  Java HotSpot(TM) 64-Bit Server VM (build 25.291-b10, mixed mode)
+  
+  C:\Users\local>javac -version
+  javac 1.8.0_291
+  ```
+
+<br>
+
+### Scala 설치
+
+- scala binaries를 다운받자 [링크](https://www.scala-lang.org/download/scala2.html)
+
+  - other ways to install Scala
+  - [Download the Scala binaries for windows] 클릭
+
+- 다운받은 "**scala-2.13.3.msi"**를 실행
+
+  - Custom Setup
+
+    - Spark를 사용하기위해 설치하는 경우 경로를 변경하자!!
+
+      ###### 기본 설치 폴더인 `C:\Program Files (x86)\scala\`는 띄어쓰기때문에 spark가 인식할 수 없다고 합니다
+
+    - [Browse..]
+
+      `C:\Users\local\scala` 이런식으로 원하는 경로로 지정
+
+  - 설치 완료
+
+- **환경변수** 설정
+
+  - window+ R : `control system`
+  - [고급 시스템 설정] - [고급] - [환경 변수]
+  - 시스템 변수 - [새로 만들기]
+    - 이름 : `SCALA_HOME` 
+    - 값 : `C:\Users\local\scala`
+  - 시스템 변수 - [Path] - [편집]
+    - `%SCALA_HOME%\bin` 추가
+  - 확인 눌러서 변경 내용 적용하기
+
+- **scala 실행**
+
+  - cmd에서 `scala`
+  - `scala>`로 변경되면 OK
+
+  ```shell
+  C:\Users\local>scala
+  Welcome to Scala 2.13.6 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_291).
+  Type in expressions for evaluation. Or try :help.
+  
+  scala>
+  ```
+
+  
