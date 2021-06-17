@@ -53,7 +53,13 @@
 
 #### Functional Language
 
-
+- 모든 함수(function)가 값(value)이고, 모든 값(value)이 객체(object)이고, 궁극적으로는 **모든 함수(function)가 객체(object)** 라는 점에서 함수형 언어
+- 특징
+  - **익명 함수(anonymous functions)**를 정의하기위한 간단한 문법 제공
+  - **고차(higher-order)** 함수 지원
+  - 함수 **중첩(nesting)** 허용
+  - **currying** 지원
+    - 여러 인자 받는 함수를 단일 인자 받는 함수의 체인 이용하는 방식으로 바꾸는 것
 
 <br>
 
