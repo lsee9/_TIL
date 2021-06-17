@@ -160,7 +160,7 @@
     - `%SCALA_HOME%\bin` 추가
   - 확인 눌러서 변경 내용 적용하기
 
-- **scala 실행**
+- **scala 실행 (interactive mode)**
 
   - cmd에서 `scala`
   - `scala>`로 변경되면 OK
