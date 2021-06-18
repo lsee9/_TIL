@@ -52,7 +52,7 @@
 
 - **정수형(Integral Literals)**
 
-  - Int, Long(suffix L, l)
+  - Int, Long(suffix L)
 
   ```scal
   0
@@ -97,6 +97,32 @@
   ```scala
   "Hello,\nWorld!"
   "This string contains a \" character."
+  ```
+
+### Type Casting
+
+- 자동 형변환
+
+- 명시적 형변환
+
+  ```shell
+  scala> var i = 1
+  var i: Int = 1
+  
+  scala> var l = 10L
+  var l: Long = 10
+  
+  scala> i = l
+             ^
+         error: type mismatch;
+          found   : Long
+          required: Int
+  
+  scala> i = l.toInt
+  // mutated i
+  
+  scala> i
+  val res12: Int = 10
   ```
 
   
