@@ -118,9 +118,13 @@
 
 ## 5.2 String Interpolation
 
+> String을 만들기 위한 새로운 방법!
+>
+> string literal 프로세스(process)에 변수 참조(variable reference)를 직접 포함하는 매커니즘(mechanism)
+
 ### 's'
 
-
+- string processing에 **직접적인 변수(variable) 사용**을 허용
 
 ### 'f'
 
