@@ -38,16 +38,67 @@
 | Char      | 16 bit unsigned Unicode character<br />from U+0000 to U+FFFF |
 | String    | A sequence of Chars                                          |
 | Boolean   | Either the literal true or the literal false                 |
-| Unit      | Corresponds to no value                                      |
+| Unit      | no value                                                     |
 | Null      | null or empty reference                                      |
 | Nothing   | The subtype of every other type<br />includes no values      |
 | Any       | The supertype of any type<br />any object is of type *Any*   |
-| AnyRef    | The supertype of any reference type                          |
+| AnyRef    | The supertype(부모타입) of any reference type                |
 
 <br>
 
 ## 2.1 Basic Literals
 
+> Literal은 고정된 값을 의미합니다!
 
+- **정수형(Integral Literals)**
+
+  - Int, Long(suffix L, l)
+
+  ```scal
+  0
+  035
+  21 
+  0xFFFFFFFF 
+  0777L
+  ```
+
+- **부동소수점(Floating Point Literals)**
+
+  - Float (suffix F or f), Double
+
+  ```scala
+  0.0 
+  1e30f 
+  3.14159f 
+  1.0e100
+  .1
+  ```
+
+- **논리형(Boolean Literals)**
+
+  - Boolean type
+  - true, false
+
+- **문자형(Character Literals)**
+
+  - 작은 따옴표(quotes)로 감싸진 단일 문자
+
+  ```scala
+  'a' 
+  '\u0041'
+  '\n'
+  '\t'
+  ```
+
+- **문자열(String Literals)**
+
+  - 큰 따옴표(double quotes)로 감싸진 문자의 시퀀스(a sequence of characters)
+
+  ```scala
+  "Hello,\nWorld!"
+  "This string contains a \" character."
+  ```
+
+  
 
 ## 2.2 Escape Sequences
