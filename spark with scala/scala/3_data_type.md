@@ -129,22 +129,20 @@
 
   ```shell
   scala> var i = 1
-  var i: Int = 1
+  i: Int = 1
   
   scala> var l = 10L
-  var l: Long = 10
+  l: Long = 10
   
   scala> i = l
+  <console>:13: error: type mismatch;
+   found   : Long
+   required: Int
+         i = l
              ^
-         error: type mismatch;
-          found   : Long
-          required: Int
   
   scala> i = l.toInt
-  // mutated i
-  
-  scala> i
-  val res12: Int = 10
+  i: Int = 10
   ```
 
   
