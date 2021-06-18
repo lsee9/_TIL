@@ -76,11 +76,39 @@
   >scala Len
   ```
 
-  
+  ```shell
+  //output
+  String Length is : 17
+  ```
+
+<br>
 
 ### Concatenating Strings
 
+- `.concat()`
 
+  - 두 문자열을 연결(concatenating)하기위한 String 클래스(class)의 메서드(method)
+  - string1뒤에 string2가 더해진 새로운 문자열 반환
+
+  ```scala
+  string1.concat(string2)
+  ```
+
+  - string literals를 사용한 경우
+
+  ```scala
+  "My name is ".concat("Mina")  //My name is Mina
+  ```
+
+- `+` operator
+
+  - 문자열 연결에 사용되는 더 일반적인 방법
+
+  ```scala
+  "My name " + "is " + "Mina" + "!"  //My name is Mina!
+  ```
+
+<br>
 
 ### Creating Format Strings 
 
