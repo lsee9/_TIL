@@ -99,6 +99,28 @@
   "This string contains a \" character."
   ```
 
+- **Multi-Line Strings**
+
+  - triple quotes `""" ... """`로 감싸진 a sequence of characters
+
+  ```scala
+  """the present string
+  spans three
+  lines."""
+  ```
+
+  ```shell
+  scala> val str2 = """a
+       | b
+       | c"""
+  val str2: String =
+  a
+  b
+  c
+  ```
+
+  
+
 ### Type Casting
 
 - 자동 형변환
