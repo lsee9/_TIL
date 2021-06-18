@@ -75,3 +75,64 @@
 > - 데이터가 변경 가능하면, 동시처리시 데이터에 대한 고민이 많아집니다
 > - 따라서 `val (불변 변수)로 설정`하는 것을 선호합니다!!
 
+<br>
+
+## 4.2 Variable Data Type
+
+### Data Type Assignments
+
+- Data Type은 variable의 이름 뒤, 초기값 앞에 지정합니다
+
+  ```scala
+  val or var VariableName : DataType = [Initial Value]
+  ```
+
+  ###### 예시
+
+  ```scala
+  val myNum : Int = 10
+  var myBool : Boolean = true
+  ```
+
+- 초기값 없이 데이터 타입만 지정할 수 있습니다
+
+  - 다만 REPL을 사용하는 경우, 초기값이 없으면 에러가 발생합니다
+
+<br>
+
+### Variable Type Inference
+
+- 초기값을 지정하면, 컴파일러는 할당된 값에 따라 변수의 타입을 파악할 수 있습니다
+
+- 정수형은 Int, 부동소수점은 Double를 default값으로 합니다
+
+  ```shell
+  scala> val myNum2 = 10
+  myNum2: Int = 10
+  
+  scala> val myStr2 = "scala!"
+  myStr2: String = scala!
+  ```
+
+<br>
+
+### Multiple Assignments
+
+- 다중 지정(Multiple Assignments) 지원
+
+- code block이나 method가 Tuple를 반환하면, val ariable에 할당됩니다
+
+  ```scala
+  val (myNum5: Int, myStr5: String) = Pair(10, "Foo")
+  ```
+
+  type inference
+
+  ```scala
+  val (myNum6, myStr6) = Pair(10, "Foo")
+  ```
+
+<br>
+
+## 4.3 Variable Scope
+
