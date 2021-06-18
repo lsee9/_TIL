@@ -9,8 +9,8 @@
 #### Variables
 
 - Variable Declaration
-
-- 
+- Variable Data Type
+- Variable Scope
 
 ###### 변수! 이건 써야 뭐라도 할 수 있다!!
 
@@ -135,4 +135,38 @@
 <br>
 
 ## 4.3 Variable Scope
+
+> 사용되는 위치에 따라 **3개의 다른 scope**를 가집니다!!!
+
+### Fields
+
+- **객체(Object)에 속한** 변수(variable)
+
+- 객체에 있는 모든 메서드(method)내부에서 접근(accessible)할 수 있다
+
+- 필드와 함께 선언된 접근 제어자(access modifiers)에 따라 객체 외부에서 접근할 수 있다
+
+  > 접근 제어자(access modifiers)
+  >
+  > - Private: 정의된 class 내부나, 해당 class의 object를 통해 접근 가능
+  > - Protected: 정의된 base class의 sub class에서만 접근 가능
+  >
+  > - Public(No Modifier): default access level(Java의 public에 대응), 어디서나 접근 가능
+
+- **var**(mutable)과 **val**(immutable)로 정의될 수 있다
+
+<br>
+
+### Method Parameters
+
+- 메서드(method)가 호출될 때, **메서드 내부에 값(value)을 전달**하는데 사용되는 변수(variables)
+- **val**(immutable)로만 정의된다
+
+<br>
+
+### Local Variables
+
+- **메서드(method)내부에 정의**된 변수(variables)
+- 메서드 내부에서만 접근할 수 있지만, 메서드로부터 반환(return)한다면 메서드를 탈출할 수 있다
+- **var**(mutable)과 **val**(immutable)로 정의될 수 있다
 
