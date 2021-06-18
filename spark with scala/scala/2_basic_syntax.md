@@ -71,28 +71,31 @@
 
   - text에 코드를 작성한 뒤, `.scala`로 저장
 
-    ```scala
-    //HelloWorld.scala
-    object HelloWorld {
-    
-       def main(args: Array[String]) {
-          println("Hello, world!") // prints Hello World
-       }
-    }
-    ```
+  ```scala
+  //HelloWorld.scala
+  object HelloWorld {
+  
+     def main(args: Array[String]) {
+        println("Hello, world!") // prints Hello World
+     }
+  }
+  ```
 
   - cmd에서 scalac로 컴파일한 뒤, 실행한다
 
-    ```shell
-    \> scalac HelloWorld.scala
-    \> scala HelloWorld
-    ```
+  ```shell
+  \> scalac HelloWorld.scala
+  \> scala HelloWorld
+  ```
 
 <br>
 
 ## 2.1 Hello world
 
+> Hello World.. 무슨 언어를 시작하든 처음 접하는!! 여기서도 출력해봅시다
 
+- **싱글톤 객체**
+- **App Trait 상속**
 
 
 
@@ -100,7 +103,29 @@
 
 ## 2.2 Basic Syntax
 
+- Case Seneitivity
 
+- 이름 규칙
+  - Class
+  - Method
+  - Program File
+- def main()
+
+
+
+### Identifiers
+
+
+
+### Keywords
+
+
+
+### Comments
+
+
+
+### scala Packages
 
 
 
