@@ -126,13 +126,58 @@
 
 - string processing에 **직접적인 변수(variable) 사용**을 허용
 
+- 같은 범위(scope)내에 있는 String variable을 문자열과 함께 사용 가능
+
+- **예)**
+
+  - Srting variable(`name`)을 normal String(`Hello`)에 추가
+
+  ```scala
+  val name = "Mina"
+  println(s"Hello, $name")  //Hello, Mina
+  ```
+
+  - 임의의 표현식(arbitray expressions, `${1 + 2}`) 처리
+
+  ```scala
+  println(s"1 + 2 = ${1 + 2}")  //1 + 2 = 3
+  ```
+
+<br>
+
 ### 'f'
 
+- 형식화된 문자열(`formatted String`)을 만드는 것을 허용 (cf. C의 **printf**)
 
+- 모든 variable reference는  the **printf** style format specifiers(형식 지정자, %d, %i, %f, ect.) 필요
+
+- **예)**
+
+  - `$변수명%format_specifiers`
+  - variable reference와 format specifiers 일치 해야함
+
+  ```scala
+  val height = 1.72d
+  val name = "Jieun"
+  println(f"$name%s is $height%2.3f meters tall")  //Jieun is 1.720 meters tall
+  ```
+
+  ###### `f`를 쓰지 않는 경우, 기본적으로는 %를 쓰지 않으며 %s로 가정합니다
 
 ### 'raw'
 
+- 문자열내에서 **escaping을 수행하지 않는다**는 것을 제외하면 `s` interpolator와 동일
 
+- **비교**
+
+  - **s** interpolator
+
+    ```scala
+    ```
+
+    
+
+  - **raw** interpolator
 
 
 
