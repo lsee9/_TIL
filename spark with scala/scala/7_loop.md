@@ -234,12 +234,14 @@
 
 ### 7.1.4 Syntax − for loop with yield
 
-- List
+- for loop의 반환값(return value)를 변수에 저장하거나 함수를 통해 반환
+
+- for loop의 body에 접두사(prefix)로 yield를 붙임
 
   ```scala
-  for( var x <- List ) {
-    statement(s)
-  }
+  val retVal = for{ var x <- List
+     		if condition1; if condition2 ... 
+  } yield x
   ```
 
 <br>
@@ -249,24 +251,26 @@
 - List() : collection 생성
 
   ```scala
-  object CollecLoop {
+  object YieldLoop {
     def main(args: Array[String]) {
-      val numList = List(0, 1, 2, 3, 4, 5)
+      val numList = List(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
       
-      for( num <- numList ) {
-        println( num )
+      val retNum = for{ num <- numList if num > 2; if num % 2 == 1 } yield num
+      
+      println(retNum)
+      for(num <- retNum) {
+        println(num)
       }
     }
   }
   ```
 
   ```scala
-  0
-  1
-  2
+  List(3, 5, 7, 9)
   3
-  4
   5
+  7
+  9
   ```
 
 <br>
