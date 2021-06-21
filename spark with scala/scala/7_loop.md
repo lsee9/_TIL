@@ -243,12 +243,15 @@
      		if condition1; if condition2 ... 
   } yield x
   ```
+  
+  - 중괄호(curly braces) : 변수(variables)와 조건(condition)을 유지하기위해 사용
+  - retVal : x의 모든 값이 collection형태로 저장
 
 <br>
 
 #### Example
 
-- List() : collection 생성
+- for의 결과를 retNum에 저장, for문으로 출력
 
   ```scala
   object YieldLoop {
@@ -279,11 +282,170 @@
 
 ## 7.2 while
 
+> 주어진 조건(condition)이 **true**인 동안 statement나 statement의 group을 반복(repeats)
+>
+> loop body를 **실행하기 전에 조건(condition) 테스트**
+>
+> loop가 실행되지 않을 수도 있다
 
+### Syntax
 
-## 7.3 do while
+- **statement(s)** : single statement or block statement
 
+- **condition** : 모든 표현식(any expression) 가능 (true = 0이 아닌 값)
 
+  - 조건이 false가 되면, loop 다음으로 즉시 넘어간다
+
+  ```scala
+  while(condition){
+    statement(s)
+  }
+  ```
+
+### Flow Chart
+
+```flow
+st=>start: Start
+cond=>condition: Is the condition true?
+op1=>operation: Conditional Code
+end=>end: next statement
+
+st->cond
+cond(yes)->op1(left)->cond
+cond(no)->end
+```
+
+### Example
+
+- 조건이 참인 동안 1씩 증가
+
+  ```scala
+  object WhileLoop {
+    def main(args: Array[String]) {
+      var num = 10
+      
+      while(num < 20) {
+        println(num)
+  			num += 1
+      }
+    }
+  }
+  ```
+
+  ```scala
+  10
+  11
+  12
+  13
+  14
+  15
+  16
+  17
+  18
+  19
+  ```
+
+<br>
+
+## 7.3 do-while
+
+> while와 달리 **loop의 아래(bottom)에서 조건(condition)을 체크**
+>
+> while과 달리 **적어도 한 번(at least one time)은 실행**된다
+
+### Syntax
+
+- condition : loop의 끝에 위치
+
+- statement(s) : 조건 테스트 전에 한번 실행
+
+  - 조건이 참이라면 do로 돌아가 다시 실행
+
+- 조건이 false일때까지 반복
+
+  ```scala
+  do {
+    statement(s)
+  } 
+  while(condition)
+  ```
+
+### Flow Chart
+
+```flow
+st=>start: Start
+cond=>condition: Is the condition true?
+op1=>operation: Conditional Code
+end=>end: next statement
+
+st->op1->cond
+cond(yes, right)->op1
+cond(no, bottom)->end
+```
+
+### Example
+
+- 조건이 참인 동안 1씩 증가
+
+  ```scala
+  object DoWhileLoop {
+    def main(args: Array[String]) {
+      var num = 10
+      
+      do {
+        println(num)
+        num += 1
+      }
+      while(num < 20)
+    }
+  }
+  ```
+
+  ```scala
+  10
+  11
+  12
+  13
+  14
+  15
+  16
+  17
+  18
+  19
+  ```
+
+<br>
 
 ## 7.4 Loop Control Statement
 
+> 정상적인 순서(normal sequence)에서의 실행을 바꾼다
+
+- break, continue를 지원하지 않음
+- scala ver 2.8부터 끊는 방법 존재
+
+###### 자세한 내용은 [여기](https://www.tutorialspoint.com/scala/scala_break_statement.htm) :point_left:
+
+### Syntax
+
+- break statement를 위한 syntax
+
+  ```scala
+  // import following package
+  import scala.util.control._
+  
+  // create a Breaks object as follows
+  val loop = new Breaks;
+  
+  // Keep the loop inside breakable as follows
+  loop.breakable {
+     // Loop will go here
+     for(...){
+        ....
+        
+        // Break will go here
+        loop.break;
+     }
+  }
+  ```
+
+  
