@@ -56,14 +56,22 @@
 
 - **return type** (optional) : any valid Scala data type
 
-- **list of parameters** (optional) : comma로 구분된 변수(variables)의 리스트(list)
+- **list of parameters** (optional) : comma로 구분된 변수(variables)의 리스트(list) (매개변수)
 
   ```scala
-  def functioName ([list of parameters]) : [return type] = {
+  def functioName([list of parameters]) : [return type] = {
     function body
     return [expr]
   }
   ```
+  
+  - **대부분의 경우 return키워드를 사용하지 않는다** :star:
+  
+  ```scala
+  def functionName([variablr_name]: [data_type], ...) = [expression]
+  ```
+  
+  
 
 #### Example
 
@@ -73,12 +81,16 @@
 
   ```scala
   object Add {
-    def addInt(a:Int, b:Int) : Int = {
+    def addInt(a: Int, b: Int) : Int = {
       var sum:Int = 0
       sum = a + b
       return sum
     }
   }
+  ```
+
+  ```scala
+  def addInt(a: Int, b: Int) = a + b
   ```
 
 - **procedures**
@@ -93,6 +105,8 @@
     }
   }
   ```
+
+
 
 ### 8.1.3 Calling Functions
 
