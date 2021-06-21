@@ -58,7 +58,7 @@
 
 <br>
 
-#### ex
+#### Example
 
 - **`i to j`**
   - i부터 **j번 까지** 반복
@@ -151,7 +151,12 @@
 
 ### 7.1.2 Syntax - for loop with Collections
 
-- List
+> collection에는 array, list, tuple, set, map이 있으며, 이는 뒤에서 학습하겠습니다
+
+- **List**
+
+  - element의 리스트를 가지는 collection type
+  - for loop는 한번에 한 element씩 모든 element를 반환
 
   ```scala
   for( var x <- List ) {
@@ -159,30 +164,71 @@
   }
   ```
 
-
 <br>
 
-#### ex
+#### Example
 
-- d
+- List() : collection 생성
+
+  ```scala
+  object CollecLoop {
+    def main(args: Array[String]) {
+      val numList = List(0, 1, 2, 3, 4, 5)
+      
+      for( num <- numList ) {
+        println( num )
+      }
+    }
+  }
+  ```
+
+  ```scala
+  0
+  1
+  2
+  3
+  4
+  5
+  ```
 
 <br>
 
 ### 7.1.3 Syntax − for loop with Filters
 
-- List
+- 하나 또는 이상의 **if** statement를 사용해 일부 element의 필터링 가능
 
   ```scala
-  for( var x <- List ) {
+  for( var x <- List
+     		if condition1; if condition2 ... ) {
     statement(s)
   }
   ```
 
 <br>
 
-#### ex
+#### Example
 
-- d
+- List() : collection 생성
+
+  ```scala
+  object CollecLoop {
+    def main(args: Array[String]) {
+      val numList = List(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+      
+      for( num <- numList 
+           if num > 2; if num % 2 == 1 ) {
+        println( num )
+      }
+    }
+  }
+  ```
+
+  ```scala
+  3
+  5
+  7
+  9
+  ```
 
 <br>
 
@@ -198,9 +244,32 @@
 
 <br>
 
-#### ex
+#### Example
 
-- d
+- List() : collection 생성
+
+  ```scala
+  object CollecLoop {
+    def main(args: Array[String]) {
+      val numList = List(0, 1, 2, 3, 4, 5)
+      
+      for( num <- numList ) {
+        println( num )
+      }
+    }
+  }
+  ```
+
+  ```scala
+  0
+  1
+  2
+  3
+  4
+  5
+  ```
+
+<br>
 
 <br>
 
