@@ -115,6 +115,35 @@ If statement is false
 
 <br>
 
+#### + Plus :star:
+
+- **조건식(conditional expression)**: **하나의 값으로 계산**되는 식
+
+- if, else 키워드를 사용해 조건식을 작성할 수 있다!!
+
+  ```scala
+  val num = if (false) 13 else 14  //num: Int = 14
+  ```
+
+- 중괄호를 이용해 여러식을 묶을 수 있으며, 마지막 식이 해당 조건식의 결과값이 된다
+
+  ```scala
+  if (true) {
+    val x = 4
+    x + x
+  } else {
+    val x = 5
+    x * x
+  }
+  // res1: Int = 8
+  ```
+
+  
+
+
+
+<br>
+
 ## 6.3 If-else-if-else Statement
 
 > if문 뒤에 '*else if...else*' statement가 올 수 있다
