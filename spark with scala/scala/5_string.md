@@ -206,3 +206,22 @@
 
 ## 5.3 String Methods
 
+> **java.lang.String** class에 정의된 메서드(method)를 알아보자
+>
+> 모두 scala 에서 사용할 수 있다!!
+
+- **char charAt(int index)**
+  - 지정된 `index에 있는 문자`(character)를 반환
+- **int compareTo(Object o)**
+  - 해당 String을 `다른 Object와 비교`한다
+- **int compareTo(String anotherString)**
+  - 두 string을 `사전적으로(lexicographically) 비교`
+
+- **int compareToIgnoreCase(String str)**
+  - 두 string을 `사전적으로 비교`하고, `대소문자 차이(case differences)는 무시`한다
+- **String concat(String str)**
+  - 해당 string의 끝에 `지정된 string을 연결`한다(concatenate)
+- **boolean contentEquals(StringBuffer sb)**
+  - 해당 string이 지정된 `StringBuffer와 동일한 문자 시퀀스`(sequence of characters)를 나타내는 경우만(if and only if) `true`반환
+- 
+
