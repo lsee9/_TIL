@@ -173,13 +173,36 @@
   - **s** interpolator
 
     ```scala
+    object SPrac {
+       def main(args: Array[String]) {
+          println(s"Result = \n a \n b")
+       }
+    }
     ```
 
-    
+    ```scala
+    //Output, 공백도 출력
+    Result =
+     a
+     b
+    ```
 
   - **raw** interpolator
 
+    ```scala
+    object RawPrac {
+       def main(args: Array[String]) {
+          println(raw"Result = \n a \n b")
+       }
+    }
+    ```
 
+    ```scala
+    //Output
+    Result = \n a \n b
+    ```
+
+<br>
 
 ## 5.3 String Methods
 
