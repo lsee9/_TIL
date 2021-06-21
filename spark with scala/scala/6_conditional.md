@@ -80,7 +80,40 @@ If statement is True
 
 ## 6.2 If-else Statement
 
+> Boolean expression이 false일 때 실행되는 선택적 else statement가 if statement뒤에 옵니다
 
+### Syntax
+
+```scala
+if(Boolean_expression) {
+  //Boolean_expression이 true인 경우 실행될 statement
+} else {
+  //Boolean_expression이 false인 경우 실행될 statement
+}
+```
+
+### ex)
+
+```scala
+object IfElseCond {
+  def main(args: Array[String]) {
+    var x = 10
+    
+    if( x < 20 ) {
+      println("If statement is True")
+    } else {
+      println("If statement is false")
+    }
+  }
+}
+```
+
+```scala
+//Output
+If statement is false
+```
+
+<br>
 
 ## 6.3 If-else-if-else Statement
 
