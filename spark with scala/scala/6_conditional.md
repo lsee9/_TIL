@@ -97,7 +97,7 @@ if(Boolean_expression) {
 ```scala
 object IfElseCond {
   def main(args: Array[String]) {
-    var x = 10
+    var x = 30
     
     if( x < 20 ) {
       println("If statement is True")
@@ -117,7 +117,91 @@ If statement is false
 
 ## 6.3 If-else-if-else Statement
 
+> if문 뒤에 '*else if...else*' statement가 올 수 있다
 
+- 다양한 조건을 테스트 하는데 유용
+- 유의사항(points to keep in mind)
+  - if는 한개 또는 0개의 else를 가질 수 있으며, else if 뒤에 와야한다
+  - 0개 또는 많은 else if를 가질 수 있으며, else 전에 와야한다
+  - 하나의 else if가 성공하면, 남은 else if나 else는 실행되지 않는다
+
+### Syntax
+
+```scala
+if(Boolean_expression1) {
+  //Boolean_expression1이 true인 경우 실행될 statement
+} else if(Boolean_expression2) {
+  //Boolean_expression2이 true인 경우 실행될 statement
+} else if(Boolean_expression3) {
+  //Boolean_expression3이 true인 경우 실행될 statement
+} else {
+  //위의 조건문 중 어떤것도 실행되지 않았을 때 실행
+}
+```
+
+### ex)
+
+```scala
+object IfElseIfCond {
+  def main(args: Array[String]) {
+    var x = 30
+    
+    if( x == 10 ) {
+      println("Value of x is 10")
+    } else if( x == 20 ) {
+      println("Value of x is 20")
+    }  else if( x == 30 ) {
+      println("Value of x is 30")
+    } else {
+      println("all statement is false")
+    }
+  }
+}
+```
+
+```scala
+//Output
+Value of x is 30
+```
+
+<br>
 
 ## 6.4 Nested if-else Statement
 
+> 중첩하는 것은 합법적!!
+
+### Syntax
+
+```scala
+if(Boolean_expression1) {
+  //Boolean_expression1이 true인 경우 실행될 statement
+  
+  if(Boolean_expression2) {
+    //Boolean_expression2이 true인 경우 실행될 statement
+  }
+} 
+```
+
+### ex)
+
+```scala
+object IfNestCond {
+  def main(args: Array[String]) {
+    var x = 30
+    var y = 20
+    
+    if( x == 30 ) {
+      if(y == 20) {
+        println("x = 30 and y = 20")
+      }
+    } 
+  }
+}
+```
+
+```scala
+//Output
+x = 30 and y = 20
+```
+
+<br>
