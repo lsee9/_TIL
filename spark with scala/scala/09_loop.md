@@ -19,7 +19,7 @@
 <br>
 
 
-# 7. Loop
+# 9. Loop
 
 > 코드 블럭(block of code)을 여러번 실행해야할 경우가 종종 발생합니다!
 
@@ -40,11 +40,11 @@
 
 <br>
 
-## 7.1 for
+## 9.1 for
 
 > 특정 횟수를 싱행해야하는 루프를 효율적으로 작성할 수 있는 반복 제어 구조
 
-### 7.1.1 Syntax - for loop with ranges
+### 9.1.1 Syntax - for loop with ranges
 
 - Range : 숫자 범위(range of numbers, `i to j` or `i until j`)
 
@@ -149,7 +149,7 @@
 
 <br>
 
-### 7.1.2 Syntax - for loop with Collections
+### 9.1.2 Syntax - for loop with Collections
 
 > collection에는 array, list, tuple, set, map이 있으며, 이는 뒤에서 학습하겠습니다
 
@@ -193,7 +193,7 @@
 
 <br>
 
-### 7.1.3 Syntax − for loop with Filters
+### 9.1.3 Syntax − for loop with Filters
 
 - 하나 또는 이상의 **if** statement를 사용해 일부 element의 필터링 가능
 
@@ -232,7 +232,7 @@
 
 <br>
 
-### 7.1.4 Syntax − for loop with yield
+### 9.1.4 Syntax − for loop with yield
 
 - for loop의 반환값(return value)를 변수에 저장하거나 함수를 통해 반환
 
@@ -280,7 +280,7 @@
 
 <br>
 
-## 7.2 while
+## 9.2 while
 
 > 주어진 조건(condition)이 **true**인 동안 statement나 statement의 group을 반복(repeats)
 >
@@ -347,7 +347,7 @@ cond(no)->end
 
 <br>
 
-## 7.3 do-while
+## 9.3 do-while
 
 > while와 달리 **loop의 아래(bottom)에서 조건(condition)을 체크**
 >
@@ -416,7 +416,7 @@ cond(no, bottom)->end
 
 <br>
 
-## 7.4 Loop Control Statement
+## 9.4 Loop Control Statement
 
 > 정상적인 순서(normal sequence)에서의 실행을 바꾼다
 
