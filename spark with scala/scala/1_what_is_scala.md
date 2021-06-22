@@ -9,7 +9,6 @@
 #### What is Scala?
 
 - Introduction to Scala
-- Functional Programming
 - Installation
 
 ###### Python과 비슷하다고 하니...빠르게 배워보자!
@@ -71,15 +70,7 @@
 
 <br>
 
-## 1.2 Functional Programming
-
-
-
-<br>
-
-<br>
-
-## 1.3 Installation
+## 1.2 Installation
 
 > scala를 사용하려면 Java가 기본적으로 필요합니다!!!
 
