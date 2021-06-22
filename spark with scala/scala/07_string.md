@@ -17,13 +17,13 @@
 <hr>
 <br>
 
-# 5. String
+# 7. String
 
 > String은 **Immutable object**로 수정 불가합니다!
 >
 > 이제부터 java.lang.String 클래스의 중요 메서드를 알아봅시다
 
-## 5.1 String
+## 7.1 String
 
 ### Creating String
 
@@ -116,7 +116,7 @@
 
 
 
-## 5.2 String Interpolation
+## 7.2 String Interpolation
 
 > String을 만들기 위한 새로운 방법!
 >
@@ -204,7 +204,7 @@
 
 <br>
 
-## 5.3 String Methods
+## 7.3 String Methods
 
 > **java.lang.String** class에 정의된 메서드(method)를 알아보자
 >
