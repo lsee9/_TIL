@@ -19,7 +19,7 @@
 <br>
 
 
-# 6. conditional
+# 8. conditional
 
 > scala에서의 conditional statement를 알아보겠습니다
 
@@ -40,7 +40,7 @@
 
 <br>
 
-## 6.1 If Statement
+## 8.1 If Statement
 
 > 하나 이상의 statements가 뒤따르는 Boolean expression으로 구성
 
@@ -78,7 +78,7 @@ If statement is True
 
 <br>
 
-## 6.2 If-else Statement
+## 8.2 If-else Statement
 
 > Boolean expression이 false일 때 실행되는 선택적 else statement가 if statement뒤에 옵니다
 
@@ -144,7 +144,7 @@ If statement is false
 
 <br>
 
-## 6.3 If-else-if-else Statement
+## 8.3 If-else-if-else Statement
 
 > if문 뒤에 '*else if...else*' statement가 올 수 있다
 
@@ -195,7 +195,7 @@ Value of x is 30
 
 <br>
 
-## 6.4 Nested if-else Statement
+## 8.4 Nested if-else Statement
 
 > 중첩하는 것은 합법적!!
 
