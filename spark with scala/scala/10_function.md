@@ -38,7 +38,7 @@
 
 <br>
 
-### 10.1.1 Function Declarations
+### Function Declarations
 
 - 함수는 source file 어디서나 나타날 수 있다 (정의된 함수 내부에서 정의될 수도 있음)
 
@@ -50,7 +50,7 @@
 
   - equals sign이나 method body를 사용하지 않으면 method는 ***abstract***로 선언
 
-### 10.1.2 Function Definitions
+### Function Definitions
 
 #### Syntax
 
@@ -66,6 +66,8 @@
   ```
   
   - **대부분의 경우 return키워드를 사용하지 않는다** :star:
+  
+    ###### 축약해서 하나의 표현식(expression)으로!! 표현
   
   ```scala
   def functionName([variablr_name]: [data_type], ...) = [expression]
@@ -108,7 +110,7 @@
 
 
 
-### 10.1.3 Calling Functions
+### Calling Functions
 
 > method 호출(invoking)을 위한 다양한 구문 변형(syntactic variations) 제공
 
@@ -151,4 +153,54 @@
   ```
 
   
+
+## 10.2 Additional Concept
+
+### 10.2.1 Variable Arguments
+
+
+
+### 10.2.2 Default Parameter Values
+
+
+
+### 10.2.3 Nested Functions
+
+
+
+### 10.2.4 Partially Applied Functions 
+
+
+
+### 10.2.5 Named Arguments
+
+
+
+<br>
+
+## 10.3 Recursion Functions
+
+
+
+<br>
+
+## 10.4 Higher-Order Functions
+
+
+
+<br>
+
+## 10.5 Anonymous Functions
+
+
+
+<br>
+
+## 10.6 Currying Functions
+
+
+
+<br>
+
+
 
