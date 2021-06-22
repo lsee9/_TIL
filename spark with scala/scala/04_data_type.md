@@ -16,7 +16,7 @@
 <br>
 
 
-# 3. Data Type
+# 4. Data Type
 
 > Java와 동일하다!!!
 
@@ -46,7 +46,7 @@
 
 <br>
 
-## 3.1 Basic Literals
+## 4.1 Basic Literals
 
 > Literal은 고정된 값을 의미합니다!
 
@@ -147,4 +147,4 @@
 
   
 
-## 3.2 Escape Sequences
+## 4.2 Escape Sequences
