@@ -17,7 +17,7 @@
 <br>
 
 
-# 2. Basic Syntax
+# 3. Basic Syntax
 
 > Java를 잘 안다면 Scala를 배우기 쉽다!!! (문장 끝에 ;가 없다는 차이?)
 
@@ -90,7 +90,7 @@
 
 <br>
 
-## 2.1 Hello world
+## 3.1 Hello world
 
 > Hello World.. 무슨 언어를 시작하든 처음 접하는!! 여기서도 출력해봅시다
 
@@ -101,7 +101,7 @@
 
 <br>
 
-## 2.2 Basic Syntax
+## 3.2 Basic Syntax
 
 - Case Seneitivity
 
