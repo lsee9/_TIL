@@ -158,7 +158,14 @@
 
 ### 10.2.1 Variable Arguments
 
+- `*`
 
+  - 동일한 타입의 매개변수(parameter)가 반복되는 경우 사용
+
+  ```scala
+  ```
+
+  
 
 ### 10.2.2 Default Parameter Values
 
@@ -170,7 +177,7 @@
 
 ### 10.2.4 Partially Applied Functions 
 
-
+- `_`
 
 ### 10.2.5 Named Arguments
 
