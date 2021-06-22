@@ -18,11 +18,11 @@
 <br>
 
 
-# 8. Function
+# 10. Function
 
 > scala programming의 핵심!!!
 
-## 8.1 Function Basic
+## 10.1 Function Basic
 
 > task를 수행하는 statement의 group
 >
@@ -38,7 +38,7 @@
 
 <br>
 
-### 8.1.1 Function Declarations
+### 10.1.1 Function Declarations
 
 - 함수는 source file 어디서나 나타날 수 있다 (정의된 함수 내부에서 정의될 수도 있음)
 
@@ -50,7 +50,7 @@
 
   - equals sign이나 method body를 사용하지 않으면 method는 ***abstract***로 선언
 
-### 8.1.2 Function Definitions
+### 10.1.2 Function Definitions
 
 #### Syntax
 
@@ -108,7 +108,7 @@
 
 
 
-### 8.1.3 Calling Functions
+### 10.1.3 Calling Functions
 
 > method 호출(invoking)을 위한 다양한 구문 변형(syntactic variations) 제공
 
