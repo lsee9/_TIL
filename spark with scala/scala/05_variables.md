@@ -19,7 +19,7 @@
 <br>
 
 
-# 4. Variables
+# 5. Variables
 
 > 변수는 값(values)을 저장하기위한 메모리 공간입니다!!
 
@@ -28,7 +28,7 @@
 
 <br>
 
-## 4.1 Variable Declaration
+## 5.1 Variable Declaration
 
 > value로서 variable로서 정의할 때 사용하는 syntax가 다릅니다!!
 
@@ -77,7 +77,7 @@
 
 <br>
 
-## 4.2 Variable Data Type
+## 5.2 Variable Data Type
 
 ### Data Type Assignments
 
@@ -134,7 +134,7 @@
 
 <br>
 
-## 4.3 Variable Scope
+## 5.3 Variable Scope
 
 > 사용되는 위치에 따라 **3개의 다른 scope**를 가집니다!!!
 
