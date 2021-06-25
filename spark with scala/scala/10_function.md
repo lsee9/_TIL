@@ -199,7 +199,43 @@
 
 ## 10.5 Anonymous Functions
 
+> **function literals**라고도 불린다 (in source code/ at run time)
+>
+> object로 설명되는 경우 **function values**라고도 불린다
 
+### Syntax
+
+```scala
+// basic syntax
+val lambda_exp = (variable: type) => Transformation_Expression
+
+// no parameter
+val lambda_exp = () => Transformation_Expression
+```
+
+### Example
+
+- 두 parameter의 곱
+
+  ```scala
+  // define
+  val mul = (x: Int, y: Int) => x * y
+  
+  // calling
+  mul(2, 3)  //res0: Int = 6
+  ```
+
+- parameter가 없는 경우
+
+  ```scala
+  // define
+  var userDir = () => { System.getProperty("user.dir") }
+  
+  // calling
+  println(userDir)
+  ```
+
+  
 
 <br>
 
