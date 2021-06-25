@@ -31,6 +31,20 @@
 
 ## 11.1 Arrays
 
+> 같은 타입(same type)의 element의 fixed-size sequential collection을 저장하는 자료구조(data structure)
+>
+> index로 각각의 variable처럼 사용할 수 있다
+
+### Example
+
+```scala
+// defining
+val myArray1 = Array(1, 2, 3)
+
+// 개별 데이터 접근
+myArray1(0)
+```
+
 
 
 ## 11.2 Lists
