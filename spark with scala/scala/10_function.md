@@ -36,6 +36,43 @@
 
 ###### 즉, 일부 object의 member로 정의되는 function를 method라 한다
 
+> #### :bulb: 참고
+>
+> 여기서는 function과 method를 이렇게 설명하고 있다 [링크](https://docs.scala-lang.org/tour/basics.html) :point_left:
+>
+> - **Function**
+>
+>   - 매개변수(paremeter)를 가지는 **표현식(expressions)**
+>
+>     ```scala
+>     val func_name = (param: type) => func_exp
+>     ```
+>
+> - **Method**
+>
+>   - 함수와 유사하지만 약간의 차이가 있다!
+>
+>   - `def` keyword를 이용하여 정의
+>
+>     ```scala
+>     def method_name(param: type): return_type = method_exp(body)
+>     ```
+>
+>   - multi-line expressions도 사용할 수 있으며, 가장 마지막 표현식의 결과가 return value가 된다
+>
+>     ```scala
+>     def method_name(param: type): return_type = {
+>       method_exp1
+>       method_exp2
+>       ...
+>       method_exp_return
+>     }
+>     ```
+>
+> 완벽한 구분이 필요하기 보다는 이런식으로 쓰일 수 있음을 모두 알아주는게 좋을 것 같다!
+
+<br>
+
 <br>
 
 ### Function Declarations
@@ -206,8 +243,6 @@
   val doubleSeq = (x: Int) => x * 2
   val newSeq = mySeq.map(doubleSeq)  // Seq[Int] = List(2000, 6000, 4000)
   ```
-
-  
 
 <br>
 
