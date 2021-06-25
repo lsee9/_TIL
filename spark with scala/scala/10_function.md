@@ -193,7 +193,21 @@
 
 ## 10.4 Higher-Order Functions
 
+> **다른 함수(function)을 매개변수(parameter)**로 취하는 함수
+>
+> 전체 **결과(result)가 함수(function)**인 함수
 
+### Example
+
+- `map` : collection에 대해 사용, 모든 element에 동일한 function을 적용할 때 사용한다 (collection part에서 다루자)
+
+  ```scala
+  val mySeq = Seq(1000, 3000, 2000)
+  val doubleSeq = (x: Int) => x * 2
+  val newSeq = mySeq.map(doubleSeq)  // Seq[Int] = List(2000, 6000, 4000)
+  ```
+
+  
 
 <br>
 
