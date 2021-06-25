@@ -27,7 +27,12 @@
 
 # 11. Collections
 
+> containers of things
 
+- **Lazy**
+  - 접근될때 까지 메모리를 소비하지 않는다(not comsume memory until tyey are accessesd)
+- Mutable or Immutable
+  - immutable collections이 mutable items를 포함할 수 있다
 
 ## 11.1 Arrays
 
