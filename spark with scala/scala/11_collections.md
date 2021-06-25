@@ -1,4 +1,4 @@
-###### 210618_fri
+###### 210625_fri
 
 <hr>
 
@@ -8,11 +8,17 @@
 
 #### Collections
 
-- 
+- Arrays
+- Lists
+- Sets
 
-- 
+- Maps
+- Tuples
+- Options
 
-###### 일단 순서 정리
+- Iterators
+
+###### 유용하게 쓰이는 Collection!
 
 <hr>
 
@@ -20,3 +26,32 @@
 
 
 # 11. Collections
+
+
+
+## 11.1 Arrays
+
+
+
+## 11.2 Lists
+
+
+
+## 11.3 Sets
+
+
+
+## 11.4 Maps
+
+
+
+## 11.5 Tuples
+
+
+
+## 11.6 Options
+
+
+
+## 11.7 Iterators
+
