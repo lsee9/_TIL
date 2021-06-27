@@ -10,8 +10,7 @@
 #### What is Spark?
 
 - Introduction to Spark
-- Structure
-- 
+- installation
 
 ###### 뭘 어떻게 공부해야할까ㅏ
 
@@ -46,7 +45,7 @@
 
 - Fault Tolerance(장애 허용)와 Data Parallelism(데이터 병렬 처리)을 가지고 클러스터들을 프로그래밍하기위한 인터페이스를 제공한다
 
-- 3가지 API
+- 3가지 API :star:
   
   - **RDD** (Resilient Distributed Dataset)
   - **Data Frame**
@@ -76,3 +75,18 @@
 
 ###### 할랭... 어렵... 이것저것 읽으면서 잘 정리하고 싶은데 정리가 안된다ㅜㅜㅜㅜㅜ
 
+<br>
+
+## 1.2 Installation
+
+> 우선 설치를 해보자!!!
+
+1. Spark 홈페이지 다운로드 [링크](https://spark.apache.org/downloads.html) :point_left:
+
+   <img src="1_what_is_spark.assets/image-20210617121910803.png" alt="image-20210617121910803" style="zoom:33%;" />
+
+   ###### 뭐가 좋을지 몰라 최신 버전으로 받았다!!
+
+   - Pre-built
+
+   
