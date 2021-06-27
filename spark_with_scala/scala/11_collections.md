@@ -131,7 +131,26 @@ myArray1(0)
 
 ## 11.5 Tuples
 
-> 다른 타입을 묶
+> immutable이며, 다른 타입을 묶을 수 있는 자료구조
+>
+> 패턴 매칭에 사용할 수 있다
+
+### Example
+
+- Tuple 선언
+
+  ```scala
+  val myTuple = (1, "Hello", 'A')
+  ```
+
+- _1, _2와 같은 형태로 각 값에 접근 가능
+
+  ```scala
+  myTuple._1  // Int = 1
+  myTuple._2  // String = Hello
+  ```
+
+<br>
 
 ## 11.6 Options
 
