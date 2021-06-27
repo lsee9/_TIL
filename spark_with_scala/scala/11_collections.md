@@ -195,3 +195,57 @@
 
 ## 11.7 Iterators
 
+> 주요 함수 몇가지를 알아보자
+
+### map
+
+- colleciton의 각 item에 동일한 작업을 수행할 때 사용
+
+  ```scala
+  val myNum = (1 to 10)
+  myNum.map(_ + 1)  //각각에 1을 더함
+  ```
+
+### reduce, fold
+
+- collection의 데이터 집계에 사용
+
+- Associative, Commutative한 function만 전달할 수 있다
+
+  - `+, *` 은 가능, `-, /`은 arg의 순서를 바꾸면 결과값이 달라지므로(commutative X) 사용 불가
+
+  ```scala
+  val myNum = (1 to 10)
+  myNum.reduce(_ + _)  // 55
+  ```
+
+- fold는 기본값을 제공할 수 있다
+
+  ```scala
+  myNum.fold(10)(_ + _)  // 65
+  ```
+
+### groupBy
+
+- key기준으로 병합하며, Map형식으로. key와 value로 List형태 데이터를 반환한다
+
+  ```scala
+  val myList = List(("A", 1), ("B", 2), ("C", 6), ("B", 2), ("A", 8), ("C", 2))
+  myList.groupBy(_._1).foreach({ case (k, v) => printf("key: %s, value: %s\n", k, v) })
+  
+  // result
+  key: A, value: List((A,1), (A,8))
+  key: C, value: List((C,6), (C,2))
+  key: B, value: List((B,2), (B,2))
+  ```
+
+### filter
+
+- collection의 데이터를 필터링하여 없애거나 분류한다
+
+  ```scala
+  val myNum = (1 to 10)
+  myNum.filter(_ > 5)  //Vector(6, 7, 8, 9, 10)
+  ```
+
+  
