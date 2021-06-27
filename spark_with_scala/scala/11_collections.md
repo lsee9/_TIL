@@ -36,25 +36,62 @@
 
 ## 11.1 Arrays
 
-> 같은 타입(same type)의 element의 fixed-size sequential collection을 저장하는 자료구조(data structure)
+> 같은 타입(same type)의 element의 fixed-size(길이가 고정된) sequential collection을 저장하는 자료구조(data structure)
 >
 > index로 각각의 variable처럼 사용할 수 있다
 
 ### Example
 
-```scala
-// defining
-val myArray1 = Array(1, 2, 3)
+- Array 
 
-// 개별 데이터 접근
-myArray1(0)
-```
+  ```scala
+  // defining
+  val myArray1 = Array(1, 2, 3)
+  
+  // 개별 데이터 접근 및 변경
+  myArray1(0)  // Int = 1
+  myArray1(0) = 10
+  ```
 
+- `++`
 
+  - 배열 연결
+
+  ```scala
+  val myArray2 = Array(3, 4, 5)
+  val myArray3 = myArray1 ++ myArray2
+  ```
+
+<br>
 
 ## 11.2 Lists
 
+> 같은 타입의 가변 길이 데이터를 저장하는 자료구조
+>
+> immutable로 각 element를 변경할 수 없다
+>
+> List[T] : type T의 element를 가지는 list의 type
 
+### Example
+
+- List 
+
+  ```scala
+  // defining
+  val myList1 = List(1, 2, 3)
+  val myList2 = (1 to 10).toList
+  
+  myList1  // List[Int] = List(1, 2, 3)
+  myList1(0)  // Int = 1
+  ```
+
+- `.head`, `.tail`
+
+  ```scala
+  myList1.head  // Int = 1
+  myList1.tail  // List[Int] = List(2, 3)
+
+<br>
 
 ## 11.3 Sets
 
